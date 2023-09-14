@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main5 () 
+int main () 
 {
 	int mas[10], max, min;
 

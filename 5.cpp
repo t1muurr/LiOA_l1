@@ -4,8 +4,7 @@
 
 int main () 
 {
-	setlocale (LC_CTYPE,"Russian");
-
+	setlocale(LC_ALL, "rus");
 	struct student 
 	{
 		char surname[15];
@@ -17,31 +16,31 @@ int main ()
 	char person[15];
 	for (int i = 0; i < 3; i++)
 	{
-		printf("Ââåäèòå ôàìèëèþ ñòóäåíòà: \n");
+		printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°: \n");
 		scanf("%s", &stud[i].surname);
-		printf("\nÂâåäèòå èìÿ ñòóäåíòà: \n");
+		printf("\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°: \n");
 		scanf("%s", &stud[i].name);
-		printf("\nÂâåäèòå âîçðàñò ñòóäåíòà: \n");
+		printf("\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°: \n");
 		scanf("%d", &stud[i].age);
-		printf("\nÂâåäèòå ôàêóëüòåò ñòóäåíòà: \n");
+		printf("\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°ÐºÑƒÐ»ÑŒÑ‚ÐµÑ‚ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°: \n");
 		scanf("%s", &stud[i].falucty);
 	}
 
-	printf("Ââåäèòå ôàìèëèþ ñòóäåíòà, äëÿ ïîèñêà: \n");
+	printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°, Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ°: \n");
 	scanf("%s", person);
 	
 	for (int i = 0; i < 3; i++)
 	{
 		if (strcmp(person, stud[i].surname) == 0)
 		{
-			printf("Ôàìèëèÿ: %s\n", stud[i].surname);
-			printf("Èìÿ: %s\n", stud[i].name);
-			printf("Âîçðàñò: %d\n", stud[i].age);
-			printf("Ôàêóëüòåò: %s\n", stud[i].falucty);
+			printf("Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ: %s\n", stud[i].surname);
+			printf("Ð˜Ð¼Ñ: %s\n", stud[i].name);
+			printf("Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚: %d\n", stud[i].age);
+			printf("Ð¤Ð°ÐºÑƒÐ»ÑŒÑ‚ÐµÑ‚: %s\n", stud[i].falucty);
 			return 0;
 		}
 		else
-			printf("Íåò òàêîãî ïîëüçîâàòåëÿ!");
+			printf("ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ!");
 	}
 	return 0;
 }

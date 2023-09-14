@@ -4,18 +4,18 @@
 #include <malloc.h>
 #include<locale.h>
 
-int main3 () 
+int main () 
 {
 	setlocale(LC_ALL, "rus");
 
 	int *mas, k;
 
 	srand(time(0));
-	printf("Ââåäèòå ðàçìåð ìàññèâà >1\n");
+	printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð° >1\n");
 	scanf("%d", &k);
 	while (k <= 1)
 	{
-		printf("Ââåäèòå ðàçìåð ìàññèâà åùå ðàç\n");
+		printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð° ÐµÑ‰Ðµ Ñ€Ð°Ð·\n");
 		scanf("%d", &k);
 	}
 

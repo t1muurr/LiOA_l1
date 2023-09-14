@@ -6,7 +6,7 @@
 #define m 10
 #define n 10
 
-int main4 () 
+int main () 
 {
 	setlocale(LC_ALL, "rus");
 
@@ -33,7 +33,7 @@ int main4 ()
 			res += mas[i][j];
 		}
 		printf("\n");
-		printf("%d строка, сумма = %d", i + 1, res);
+		printf("%d СЃС‚СЂРѕРєР°, СЃСѓРјРјР° = %d", i + 1, res);
 		res = 0;
 	}
 	printf("\n");
